@@ -1,9 +1,10 @@
+"use client";
 import TaskNav from "@/components/taskNav";
 
 export default function CompletedLayout({
   children,
 }: {
-  children: React.ReactNode,
+  children: React.ReactNode;
 }) {
   return (
     <>

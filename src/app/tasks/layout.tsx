@@ -1,3 +1,4 @@
+"use client";
 import TaskNav from "@/components/taskNav";
 
 export default function TasksLayout({
