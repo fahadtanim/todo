@@ -4,7 +4,7 @@ import { persist, createJSONStorage } from 'zustand/middleware';
 interface Todo {
   id: number;
   status: boolean;
-  name: String;
+  name: string;
 }
 
 interface TodoState {

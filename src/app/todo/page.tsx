@@ -23,16 +23,18 @@ export default function TodoPage() {
   return (
     <div className="flex justify-center min-w-full min-h-full">
       <Card className="max-w-sm self-center">
-        <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+        <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white  after:content-[''] after:h-[2px] after:block after:w-20 after:ml-1 after:bg-red-800">
           Todo Tasks
         </h5>
         <ListGroup>
           {todos.map((todo) =>
             !todo.status ? <Task item={todo} key={todo.id}></Task> : ''
           )}
-          {todos.filter((todo) => !todo.status).length == 0
-            ? "There's no task!"
-            : ''}
+          {todos.filter((todo) => !todo.status).length == 0 ? (
+            <div className="p-1 pr-4 pl-4"> {"There's no task!"}</div>
+          ) : (
+            ''
+          )}
         </ListGroup>
       </Card>
     </div>

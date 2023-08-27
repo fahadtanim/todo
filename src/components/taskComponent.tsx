@@ -34,7 +34,7 @@ export default function Task(props: Iprops) {
   };
 
   return (
-    <li className="flex flex-row p-2 justify-between min-w-[200px]">
+    <li className="flex flex-row p-2 justify-between min-w-[200px] border">
       <Checkbox
         className="self-center"
         name="task_status"
@@ -43,9 +43,9 @@ export default function Task(props: Iprops) {
       />
       <div className="ml-2 mr-2 self-center">{todo.name}</div>
       <div className="flex flex-row">
-        <UpdateTask item={todo}></UpdateTask>
+        {/* <UpdateTask item={todo}></UpdateTask> */}
         <Button color="gray" size="xs" onClick={handleTaskRemove}>
-          <HiTrash className="mr-3 h-4 w-4" />
+          <HiTrash className=" h-4 w-4" />
         </Button>
       </div>
     </li>
