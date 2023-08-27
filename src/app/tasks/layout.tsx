@@ -1,5 +1,5 @@
-"use client";
-import TaskNav from "@/components/taskNav";
+'use client';
+import TaskNav from '@/components/taskNav';
 
 export default function TasksLayout({
   children,
@@ -9,7 +9,7 @@ export default function TasksLayout({
   return (
     <>
       <TaskNav></TaskNav>
-      <main>{children}</main>
+      <main className="min-h-[500px] h-0 max-h-auto">{children}</main>
     </>
   );
 }
